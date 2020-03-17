@@ -2,7 +2,6 @@ const gulp = require('gulp'),
 browserSync = require('browser-sync').create(),
 sass = require('gulp-sass');
 
-
 // Static server & watch scss + html files
 gulp.task('watch', ['sass'], function() {
 
@@ -23,7 +22,6 @@ return gulp.src('./scss/**/*.scss')
 .pipe(gulp.dest('./css'))
 .pipe(browserSync.stream());
 });
-
 
 // default will also watch
 gulp.task('default', ['watch']);
